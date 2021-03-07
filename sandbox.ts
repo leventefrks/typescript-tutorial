@@ -1,9 +1,26 @@
-const character = 'mario';
+let names = ['john', 'mary', 'luigi'];
 
-console.log(character);
+names.push('julia');
 
-const inputs = document.querySelectorAll('input');
+let numbers = [1, 2, 5, 7, 2];
 
-inputs.forEach(input => {
-  console.log(input);
-});
+numbers.push(11);
+
+let ninja = {
+  name: 'mario',
+  belt: 'black',
+  age: 30,
+};
+
+ninja.age = 66;
+
+// explicit types
+let character: string;
+let number: number;
+let isLoggedIn: boolean;
+
+// arrays
+
+// union types
+
+// objects
