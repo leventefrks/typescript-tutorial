@@ -1,18 +1,15 @@
 "use strict";
-var anchor = document.querySelector('a');
-if (anchor) {
-    console.log(anchor.href);
-}
-console.log(anchor.href);
-//const form = document.querySelector('form')!;
+// const anchor = document.querySelector('a');
+// console.log(anchor.href);
+// const form = document.querySelector('form')!;
 var form = document.querySelector('.new-item-form');
 console.log(form.children);
-// inputs
+//inputs
 var type = document.querySelector('#type');
-var tofrom = document.querySelector('#tofrom');
+var toFrom = document.querySelector('#toFrom');
 var details = document.querySelector('#details');
 var amount = document.querySelector('#amount');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
-    console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+    console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
 });
