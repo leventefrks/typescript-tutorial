@@ -1,23 +1,20 @@
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
+// type aliases
+type StringOrNum = string | number; // type string or number
+type ObjWithName = { name: string; uid: StringOrNum };
 
-// greet = 'hello';
+const logDetails = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
 
-// greet = () => {
-//   console.log('hello, again');
-// }
+const greeting = (user: ObjWithName) => {
+  console.log(`${user.name} says typescript is fun!`);
+};
 
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
-  console.log(a + b);
-  console.log(c);
-}
+logDetails('1234', 'Nike Pegasus 37 - neon');
 
-add(5, 10, 'ninja');
+const user = {
+  name: 'John  Rambo',
+  uid: 12334,
+};
 
-const minus = (a: number, b: number): number => {
-  return a + b;
-}
-
-let result = minus(10,7);
-console.log(result);
+greeting(user);
