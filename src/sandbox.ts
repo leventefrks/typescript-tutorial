@@ -1,23 +1,19 @@
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
+//let greet = () => console.log('hello typescript');
 
-// greet = 'hello';
+let greet: Function; // function use capitals
 
-// greet = () => {
-//   console.log('hello, again');
-// }
+greet = () => console.log('hello typescript');
 
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
-  console.log(a + b);
-  console.log(c);
-}
+const add = (a: number, b: number, c: number | string = 0) =>
+  console.log(`add two numbers ${a} + ${b}: `, a + b);
 
-add(5, 10, 'ninja');
+add(5, 6);
 
-const minus = (a: number, b: number): number => {
-  return a + b;
-}
+// optional parameter is initialized by question mark
+// if you have default value you don't have to use the optional question mark
+// const add = (a: number, b: number, c?: number | string) =>
 
-let result = minus(10,7);
-console.log(result);
+const minus = (a: number, b: number) => a - b;
+// ts knows that the result will be number (hover over on the variable name)
+
+// :void is completely different from undefined = when you don't return back anything
