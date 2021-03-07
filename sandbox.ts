@@ -16,10 +16,10 @@ numbers.push(11);
 
 // explicit types
 let character: string;
-let age: number;
+// let age: number;
 let isLoggedIn: boolean;
 
-age = 66;
+// age = 66;
 isLoggedIn = true;
 
 // arrays
@@ -63,3 +63,19 @@ let ninjaTwo: {
   age: number;
   beltColor: string;
 };
+
+// any type - dynamic types (value can be changed in the future)
+
+let age: any = 25;
+
+age = true;
+
+age = {
+  name: 'luigi',
+};
+
+let mixture: any[] = [];
+
+console.log('mixture', mixture);
+
+console.log(age);

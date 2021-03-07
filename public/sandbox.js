@@ -10,9 +10,9 @@ numbers.push(11);
 // ninja.age = 66;
 // explicit types
 var character;
-var age;
+// let age: number;
 var isLoggedIn;
-age = 66;
+// age = 66;
 isLoggedIn = true;
 // arrays
 var ninjas = []; // initialize an empty array
@@ -36,3 +36,12 @@ ninja = {
 ninja = []; // it allowed
 // first you gotta declare the type then the actual values
 var ninjaTwo;
+// any type - dynamic types (value can be changed in the future)
+var age = 25;
+age = true;
+age = {
+    name: 'luigi'
+};
+var mixture = [];
+console.log('mixture', mixture);
+console.log(age);
